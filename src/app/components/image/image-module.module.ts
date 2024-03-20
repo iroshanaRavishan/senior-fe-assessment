@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { HttpClientModule } from '@angular/common/http';
 import { ImageModuleRoutingModule } from './image-module-routing.module';
 
 
@@ -8,7 +9,8 @@ import { ImageModuleRoutingModule } from './image-module-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    ImageModuleRoutingModule
+    ImageModuleRoutingModule,
+    HttpClientModule
   ]
 })
 export class ImageModuleModule { }
