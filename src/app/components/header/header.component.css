@@ -48,13 +48,9 @@ header {
 
 
 .logo{
-    height: inherit;
-    margin: 0;
-    padding: 0;
-    left: 4.25em;
-    line-height: inherit;
-    position: absolute;
-    top: 1em;
+    height: 70px;
+    display: flex;
+    padding: 10px 20px;
     
 }
 

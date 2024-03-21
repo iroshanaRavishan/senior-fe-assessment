@@ -36,19 +36,20 @@ body, input, select, textarea {
 }
 
 .table-row-one {
-    padding : 1em 4em 1em 2em;
-    margin: 1em 1em 1em 1em;
+    padding : 0;
+    margin: 0;
     background-color: rgb(255, 217, 0);
-    border-radius: 20px;
+    border-radius: 10px;
     height: 3em;
-    width: 87.5%;
+    width: 100%;
+    left: 0;
     display: inline-flex;
     min-width: 20em;
     
 }
 .news-letter {
     margin: 0em 0em 0em 0em;
-    padding-top: 0.6em;
+    padding-top: 1.5em;
     vertical-align: middle;
     width:  30em;
     min-width: 16em;
@@ -56,7 +57,7 @@ body, input, select, textarea {
 
 .discount {
     margin: 0em 1em 0em 0em;
-    padding-top: 1.1em;
+    padding-top: 2em;
     vertical-align: top;
     width:  30em;
     min-width: 10em;
@@ -65,7 +66,7 @@ body, input, select, textarea {
 
 .subscribe{
     width:  30em;
-    margin: -0.3em 1em 0em 0em;
+    padding-top: 0.5em;
     min-width: 17em;
 }
 
@@ -102,7 +103,7 @@ input[type="email"] {
     margin-top: 0.2em;
     width: 30%; 
     border-radius: 30px;
-    height: 1.6em;
+    height: 2.7em;
     border-style: none;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -179,10 +180,9 @@ input[type="text"]:hover{
 }
 
 .image-headphone {
-    padding-top: 1em;
     height: 50px;
-    width: 50px;
-}
+    width: 170px;
+}    
 .company-details-contacts {
     display: inline-flex;
 }

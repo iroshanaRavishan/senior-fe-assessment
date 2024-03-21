@@ -10,3 +10,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+.ngx-pagination .current {
+    border-radius: 5px;
+}

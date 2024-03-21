@@ -36,15 +36,9 @@ body {
 
 .img-assign-area {
   position: absolute;
-  display: flex;
-  /* z-index: inherit; */
-  justify-content: baseline;
-  align-items: center;
-  background: red;
+  background: rgba(255, 255, 255, 0);
   height: 3em;
-  /* width: -webkit-fill-available; */
   box-sizing: border-box;
-  flex-direction: row;
 }
 
 .btn-light-box-carousel {
@@ -71,6 +65,24 @@ body {
   border: none;
 }
 
+.assign-btn {
+  position: absolute;
+  top: 5.3em;
+  right: 4em;
+  padding: 10px;
+  z-index: 2;
+  cursor: pointer;
+  color: #fff;
+  background: 0 0;
+  border: solid rgb(194, 192, 192);
+  border-radius: 5px;
+}
+
+.assign-btn:hover {
+  background-color: #c5c5c5;
+  color: black;
+}
+
 .image-container {
   position: relative;
   display: inline-block;
@@ -85,6 +97,8 @@ body {
   line-height: 0;
   column-count: 3;
   column-gap: 30px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .image {
@@ -94,10 +108,25 @@ body {
   cursor: zoom-in;
   border-radius: .35rem;
   margin-bottom: 30px;
-  box-shadow: 1 1px 5px 0 rgba(0, 0 , 0, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
+
+.image:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.15); 
+  transform: scale(1.07);
+  transition: 200ms;
+}
+
 
 .image img {
   width: 100%;
   height: auto;
+}
+
+.pagination-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
