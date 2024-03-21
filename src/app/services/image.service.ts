@@ -19,6 +19,6 @@ export class ImageService {
 
 
 // added this service to fetch the data from the given link, but I got CORS issue and invested few mins 
-// on that but could not resolve it. so I decided rto keep this file as it is and move forward.
+// on that but could not resolve it. so I decided to keep this file as it is and move forward.
 
 // this might be incorrect since I was not able to test the above code due to that CORS issue.

@@ -1,24 +1,28 @@
-  <div class="image-container">
-    <div class="image-grid">
-      <div *ngFor="let image of assignedImages | paginate:{itemsPerPage: tableSize, currentPage: page}; let i = index"  class="image">
-        <img [src]="image.url" alt="Image" />
-      </div>
-    </div>
-  </div>  
+<div class="body-row" >
+  <h2>Assigned Images to the task</h2>
+</div>
   
-  <div class="pagination-area">
-    <div>Row for page :  
-      <select (change)="onTableSizeChanges($event)" [(ngModel)]="tableSize">
-        <option *ngFor="let size of tableSizes">{{size}}</option>
-      </select>
-    </div>
-    <div>
-      <pagination-controls
-        previousLabel="Prev"
-        nextLabel="Next"
-        (pageChange)="onTableDataChange($event)"
-      >
-      </pagination-controls>
+<div class="image-container">
+  <div class="image-grid">
+    <div *ngFor="let image of assignedImages | paginate:{itemsPerPage: tableSize, currentPage: page}; let i = index"  class="image">
+      <img [src]="image.url" alt="Image" />
     </div>
   </div>
+</div>  
+
+<div class="pagination-area">
+  <div>Row for page :  
+    <select (change)="onTableSizeChanges($event)" [(ngModel)]="tableSize">
+      <option *ngFor="let size of tableSizes">{{size}}</option>
+    </select>
+  </div>
+  <div>
+    <pagination-controls
+      previousLabel="Prev"
+      nextLabel="Next"
+      (pageChange)="onTableDataChange($event)"
+    >
+    </pagination-controls>
+  </div>
+</div>
   

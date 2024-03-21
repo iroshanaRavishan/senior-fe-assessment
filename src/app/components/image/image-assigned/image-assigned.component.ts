@@ -15,7 +15,7 @@ export class ImageAssignedComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // localStorage.setItem('tableSizeOfAssigned', JSON.stringify(this.tableSize));
+    localStorage.setItem('tableSizeOfAssigned', JSON.stringify(this.tableSize));
     this.loadItems();
   }
 
@@ -38,6 +38,4 @@ export class ImageAssignedComponent implements OnInit {
     this.page = 1;
     this.loadItems();
   }
-
-
 }

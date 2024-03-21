@@ -151,9 +151,9 @@ export class ImageListComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // localStorage.setItem('initialImageList', JSON.stringify(this.initialImageList));
-    // localStorage.setItem('assignedImages', JSON.stringify(this.assignedImages));
-    // localStorage.setItem('tableSizeOfMain', JSON.stringify(this.tableSize));
+    localStorage.setItem('initialImageList', JSON.stringify(this.initialImageList));
+    localStorage.setItem('assignedImages', JSON.stringify(this.assignedImages));
+    localStorage.setItem('tableSizeOfMain', JSON.stringify(this.tableSize));
     
     this.loadItems();
   }
